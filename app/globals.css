@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@400,700,600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --primary_color: rgba(144, 58, 255, 1), rgba(254, 52, 185, 1);
+  --black: #150e28;
+  --purple: #903aff;
+  --pink: #d434fe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Regular";
+  src: url("/fonts/ClashDisplay-Regular.woff2");
+}
+
+body {
+  color: #fff;
+  background: #150e28;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 400;
+}
+
+button {
+  border-radius: 0.25rem;
+  width: 10.75rem;
+  height: 3.3125rem;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+}
+
+/* Define a custom utility class */
+.custom-background-blend-luminosity {
+  background-blend-mode: luminosity;
+}
+
+nav {
+  font-family: "Montserrat", sans-serif;
+}
+
+.outer-padding {
+}
+
+.globe {
+  top: 16rem;
+  right: 2.5rem;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.purple-lens_hero {
+  width: 100%;
+  height: auto;
+}
+
+.chain {
+  top: 31rem;
+  left: 42.5rem;
+}
+
+.creative {
+  /* top: 5rem; */
+  left: 32rem;
+}
